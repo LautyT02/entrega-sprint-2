@@ -19,11 +19,11 @@
         <h4>Ingresa cuanto paga cada persona</h4>
       </div>
       <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="floatingInput" placeholder="Ejemplo: Paula">
+        <input type="text" class="form-control" id="inputNombre" placeholder="Ejemplo: Paula">
         <label for="floatingInput">Nombre</label>
       </div>
       <div class="form-floating">
-        <input type="number" min="1" class="form-control" id="floatingInputValue" placeholder="$0.00">
+        <input type="number" min="1" class="form-control" id="inputMonto" placeholder="$0.00">
         <label for="floatingInputValue">Cantidad gastada</label>
         <script>
           function check() {
@@ -41,20 +41,20 @@
           Nombre y gasto:
         </div>
         <ul id="nombreYmonto" class="list-group list-group-flush">
-          <li class="list-group-item">Nombre: $gasto</li>
-          <li class="list-group-item">Nombre: $gasto</li>
+          <!--<li class="list-group-item">Nombre: $gasto</li>
+          <li class="list-group-item">Nombre: $gasto</li>-->
         </ul>
       </div>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Total:</h5>
-          <p class="card-text">$gasto</p>
+          <p class="card-text" id="total">$ 0.00</p>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">A cada uno le corresponde pagar:</h5>
-          <p class="card-text">$0.00</p>
+          <p class="card-text" id="c/uno">$ 0.00</p>
         </div>
       </div>
     </div>
