@@ -2,7 +2,7 @@ let suma = 0;
 let promedio = 0;
 let cantVal = 0;
 let i = 0;
-let nombre = "Nombre";
+let nombre = "";
 let monto = [];
 let continuar = false;
 
