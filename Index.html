@@ -25,16 +25,6 @@
       <div class="form-floating">
         <input type="number" min="1" class="form-control" id="inputMonto" placeholder="$0.00">
         <label for="floatingInputValue">Cantidad gastada</label>
-        <script>
-          function check() {
-            if (document.getElementById("floatingInputValue").validity.rangeUnderflow) {
-              alert('Ingrese un monto válido')
-            }
-            if (document.getElementById("inputNombre") == null) {
-              alert('El Campo Nombre no puede quedar vacío')
-            }
-          }
-        </script>
       </div>
       <button type="button" class="btn btn-primary" id="boton-enviar" onclick="ejecutar()">Enviar</button>
     </div>
@@ -43,10 +33,7 @@
         <div class="card-header">
           Nombre y gasto:
         </div>
-        <button type="button" class="btn btn-primary" id="boton-borrar" onclick="borrar()">Borrar Último</button>
         <ul id="nombreYmonto" class="list-group list-group-flush">
-          <!--<li class="list-group-item">Nombre: $gasto</li>
-          <li class="list-group-item">Nombre: $gasto</li>-->
         </ul>
       </div>
       <div class="card">
