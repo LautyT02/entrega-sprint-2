@@ -1,4 +1,4 @@
-#titulo {
+.titulo {
     text-align: center;
     background-color: rgb(0, 128, 255);
     color:azure;
@@ -44,4 +44,7 @@ en pantalla tipo celular con un margin de 30px*/
 
 .card-header {
     font-weight: bold;
+}
+.formulario{
+    margin-top: 25px;
 }

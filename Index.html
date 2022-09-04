@@ -13,23 +13,31 @@
 
 <body>
   <div class="row g-3">
+    <div class="titulo">
+      <h1>App de gastos</h1>
+    </div>
+  </div>
+  <div class="row g-3">
     <div class="col-sm-6">
-      <div id="titulo">
-        <h1>App de gastos</h1>
-        <h4>Ingresa cuanto paga cada persona</h4>
+      <div class="card">
+        <div class="card-header">
+          Ingresa cuanto gastó cada persona
+        </div>    
       </div>
-      <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="inputNombre" placeholder="Ejemplo: Paula">
-        <label for="floatingInput">Nombre</label>
+      <div class="formulario">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="inputNombre" placeholder="Ejemplo: Paula">
+          <label for="floatingInput">Nombre</label>
+        </div>
+        <div class="form-floating">
+          <input type="number" min="1" class="form-control" id="inputMonto" placeholder="$0.00">
+          <label for="floatingInputValue">Cantidad gastada</label>
+        </div>
+        <button type="button" class="btn btn-primary" id="boton-enviar" onclick="ejecutar()">Enviar</button>
       </div>
-      <div class="form-floating">
-        <input type="number" min="1" class="form-control" id="inputMonto" placeholder="$0.00">
-        <label for="floatingInputValue">Cantidad gastada</label>
-      </div>
-      <button type="button" class="btn btn-primary" id="boton-enviar" onclick="ejecutar()">Enviar</button>
     </div>
     <div class="col-sm-6">
-      <div class="card" id="">
+      <div class="card">
         <div class="card-header">
           Nombre y gasto:
         </div>
