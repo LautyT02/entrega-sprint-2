@@ -38,7 +38,7 @@ function mostrarNombreYmonto(valores) {//dados los datos extraidos del formulari
     let idNyM = String(valores.id)+','+String(valores.persona)+','+String(valores.pago);//Generación de ID
     //Escritura de valores al HTML
     listaNombreYmonto.innerHTML += `<li class="list-group-item" id="${idNyM}">${valores.persona}: $ ${valores.pago} 
-    <button type="button" class="btn btn-primary" id="boton-borrar" onclick="borrar('${idNyM}')">Borrar Elemento</button></li>`;
+    <button type="button" class="btn btn-primary" onclick="borrar('${idNyM}')">Borrar Elemento</button></li>`;
 }
 function calculosEimpresion(aporte) {//Actualiza el total, calcula el promedio y escribe los valores en el html. No retorna nada
     let promedio;
@@ -92,4 +92,10 @@ function posicionBorrar(datosBorrar){//Dados los datos como objeto retorna la po
         }
     }
     return -1;
+}
+function borrarTodos(){
+    for(let j = 0; j < i; j){
+        let id= String(datos[j].id)+','+String(datos[j].persona)+','+String(datos[j].pago);
+        borrar(id);
+    }
 }

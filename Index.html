@@ -23,38 +23,50 @@
         <div class="card-header">
           Ingresa cuanto gastó cada persona
         </div>    
-      </div>
-      <div class="formulario">
-        <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="inputNombre" placeholder="Ejemplo: Paula">
-          <label for="floatingInput">Nombre</label>
+        <div class="card-body">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="inputNombre" placeholder="Ejemplo: Paula">
+            <label for="floatingInput">Nombre</label>
+          </div>
+          <div class="form-floating">
+            <input type="number" min="1" class="form-control" id="inputMonto" placeholder="$0.00">
+            <label for="floatingInputValue">Cantidad gastada</label>
+          </div>
+          <button type="button" class="btn btn-primary" id="boton-enviar" onclick="ejecutar()">Enviar</button>
         </div>
-        <div class="form-floating">
-          <input type="number" min="1" class="form-control" id="inputMonto" placeholder="$0.00">
-          <label for="floatingInputValue">Cantidad gastada</label>
-        </div>
-        <button type="button" class="btn btn-primary" id="boton-enviar" onclick="ejecutar()">Enviar</button>
+        
       </div>
     </div>
     <div class="col-sm-6">
+      <div class="card" id="panel-general">
+        <div class="card-header">
+          General
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Total:</h5>
+          <p class="card-text" id="total">$ 0.00</p>
+          <h5 class="card-title">A cada uno le corresponde pagar:</h5>
+          <p class="card-text" id="c/uno">$ 0.00</p>
+          <button type="button" class="btn btn-primary" onclick="borrarTodos()">Borrar Todos</button>
+        </div>
+      </div>
+      <!--
+        <div class="card">
+        
+      </div>
+      <div class="card">
+        
+      </div>
+      
+      -->
+    </div>
+    <div class="col-sm-12">
       <div class="card">
         <div class="card-header">
           Nombre y gasto:
         </div>
         <ul id="nombreYmonto" class="list-group list-group-flush">
         </ul>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Total:</h5>
-          <p class="card-text" id="total">$ 0.00</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">A cada uno le corresponde pagar:</h5>
-          <p class="card-text" id="c/uno">$ 0.00</p>
-        </div>
       </div>
     </div>
   </div>

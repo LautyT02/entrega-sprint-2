@@ -1,5 +1,6 @@
 .titulo {
     text-align: center;
+    padding-top: 40px;
     background-color: rgb(0, 128, 255);
     color:azure;
     height: 150px;
@@ -45,6 +46,6 @@ en pantalla tipo celular con un margin de 30px*/
 .card-header {
     font-weight: bold;
 }
-.formulario{
-    margin-top: 25px;
+#panel-general {
+    padding-bottom: 3px;
 }
